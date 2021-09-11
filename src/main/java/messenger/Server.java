@@ -42,16 +42,16 @@ public class Server {
                     System.out.println(exception);
                 }
             }
-            System.out.println("Closing connection");
 
             socket.close();
             input.close();
+            System.out.println("Closing connection");
         }catch (IOException exception) {
             System.out.println(exception);
         }
     }
 
     public static void main(String[] args) {
-        Server server = new Server(5000);
+        Server server = new Server(3000);
     }
 }
